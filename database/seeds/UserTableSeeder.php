@@ -28,10 +28,19 @@ class UserTableSeeder extends Seeder
           DB::table('professeurs')->insert(
             [
                  [
-                     'name_prof'              => 'Marime Ndour'
+                     'name_prof'              => 'Marime Ndour',
+                     'matiere'              => 'Réseau',
+                     'grade'              => 'Docteur'
                  ],
                  [
-                    'name_prof'              => 'Talla Diop'
+                    'name_prof'              => 'Moussa Mbaye',
+                     'matiere'              => 'Algorithme',
+                     'grade'              => 'Ingenieur'
+                 ],
+                 [
+                    'name_prof'              => 'Saliou Faye',
+                     'matiere'              => 'Java',
+                     'grade'              => 'Technicien'
                 ]
              ]
           );

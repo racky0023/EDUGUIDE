@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Str;
+use App\Professeur;
 
 class CourController extends Controller
 {
@@ -91,10 +92,14 @@ $cours = \App\Cour::find($id);
 $prof = \App\Professeur::pluck('name','id');
 return view('cours.edit', compact('cours','professeurs'));
 
-
+    
 
 }
 
+    public function liste_prof(){
+        $profs=Professeur::all();
+        return view('layouts.inscription',compact('profs'));
+    }
 
 public function update(Request $request, $id)
 {

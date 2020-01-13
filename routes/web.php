@@ -48,9 +48,7 @@ Route::get("/cour_developp", function () {
 Route::get("/contact", function () {
   return view('layouts.contact');
 });
-Route::get('/professeurs', function () {
-  return view('layouts.inscription');
-});
+Route::get('/professeurs','CourController@liste_prof')->name('liste_professeur');
 Route::get("cours/{id}/show", 'CourController@show');
 //Route::post('/inscription', function () {
   //return 'Votre email est ' . $_POST['email'];
