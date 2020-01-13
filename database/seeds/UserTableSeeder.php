@@ -29,8 +29,10 @@ class UserTableSeeder extends Seeder
             [
                  [
                      'name_prof'              => 'Marime Ndour'
-                 ]
-                 
+                 ],
+                 [
+                    'name_prof'              => 'Talla Diop'
+                ]
              ]
           );
 
