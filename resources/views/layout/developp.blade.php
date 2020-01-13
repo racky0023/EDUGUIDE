@@ -79,59 +79,59 @@
   
   @yield('container')
   <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-  <div class="card-header">Header</div>
+  <div class="card-header">Une formation très flexible</div>
   <div class="card-body">
-    <h5 class="card-title">Primary card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
+    <h5 class="card-title"></h5>
+    <p class="card-text">Pour de nombreuses raisons, certaines personnes renouent avec une formation : des cours en ligne. Cela permet en effet de travailler de façon bien adaptée à leurs occupations et leurs disponibilités.  .</p>
+  </div> 
 </div>
-<div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
-  <div class="card-header">Header</div>
+<div class="card text-white bg-secondary mb-3" style="max-width: 18rem;"><br> </br>
+  <div class="card-header">Adaptée aux besoins</div>
   <div class="card-body">
-    <h5 class="card-title">Secondary card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <h5 class="card-title"></h5>
+    <p class="card-text">Les formations en ligne sont très pointues, ce qui avantagent considérablement le rythme d’apprentissage et évite une accumulation excessive de choses non liées au domaine dans lequel l’on se forme. Grâce aux multitudes de supports de formations (vidéos, PowerPoint, Articles, Blogs, Forums, etc.) tout le monde pourra trouver la formule qui lui va le mieux..</p>
   </div>
 </div>
 <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
-  <div class="card-header">Header</div>
+  <div class="card-header">Temps d’apprentissage illimité</div>
   <div class="card-body">
-    <h5 class="card-title">Success card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <h5 class="card-title"></h5>
+    <p class="card-text">Pour de nombreuses raisons, certaines personnes renouent avec une formation : des cours en ligne. Cela permet en effet de travailler de façon bien adaptée à leurs occupations et leurs disponibilités.  Cela permet aussi d’apprendre à votre rythme, nul besoin de vouloir être au même pas de danse que les autres..</p>
   </div>
 </div>
 <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
-  <div class="card-header">Header</div>
+  <div class="card-header">Idéal pour les appareils mobiles</div>
   <div class="card-body">
-    <h5 class="card-title">Danger card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <h5 class="card-title"></h5>
+    <p class="card-text">Dans un monde où l’utilisation des appareils Mobiles est plus importante que celle des ordinateurs et autres supports, la formation en ligne est un bon moyen de s’adapter au changement et de pouvoir apprendre n’importe où sans inconfort grâce au mLearning (pour mobile Learning). Aussi, grâce à l’adoption par les plateformes de formations des systèmes d’échanges sur les forums conçus pour leurs apprenants, ceux-ci pourront échanger avec leurs formateurs et leurs collègues tout en vaquant à leurs occupations..</p>
   </div>
 </div>
 <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
-  <div class="card-header">Header</div>
+  <div class="card-header">Idéal pour combler les écarts de performances</div>
   <div class="card-body">
-    <h5 class="card-title">Warning card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <h5 class="card-title"></h5>
+    <p class="card-text">Quoi de mieux pour pouvoir être à la hauteur du collègue de travail modèle qui a toujours un tour d’avance sur nous, ou de notre camarade de classe qui est très cultivé, que de rattraper notre retard en suivant des cours ou des formations en ligne..</p>
   </div>
 </div>
 <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
-  <div class="card-header">Header</div>
+  <div class="card-header">Développe l’esprit de recherche et de Documentation</div>
   <div class="card-body">
-    <h5 class="card-title">Info card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <h5 class="card-title"></h5>
+    <p class="card-text">Une formation en ligne est le meilleur moyen de développer l’esprit autodidacte des personnes car les apprenants n’ayant pas la possibilité de bénéficier de la présence des formateurs et des autres apprenants à leurs côtés, utilisera la « grande bibliothèque » qu’est Internet, en quête des réponses à ses questions..</p>
   </div>
 </div>
 <div class="card bg-light mb-3" style="max-width: 18rem;">
-  <div class="card-header">Header</div>
+  <div class="card-header">Mise à jour immédiate</div>
   <div class="card-body">
-    <h5 class="card-title">Light card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <h5 class="card-title"></h5>
+    <p class="card-text">Grâce à la formation en ligne, beaucoup de personnes parviennent à s’insérer plus facilement même dans un univers qui leur était étranger..</p>
   </div>
 </div>
 <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-  <div class="card-header">Header</div>
+  <div class="card-header">Se former dans un environnement connu</div>
   <div class="card-body">
-    <h5 class="card-title">Dark card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <h5 class="card-title"></h5>
+    <p class="card-text">Beaucoup de personnes ne se sentent pas très à l’aise dans leurs peaux quand il s’agit d’étudier à un certain âge, en présence de personnes d’un niveau différent au leur ou d’une tranche d’âge différente. C’est pourquoi le E-Learning vient palier à ce petit problème qui se pose..</p>
   </div>
 </div>
 

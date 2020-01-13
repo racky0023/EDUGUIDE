@@ -6,8 +6,12 @@
 
     <form action="{{ url('professseur') }}" method="POST">
         {{ csrf_field() }}
-        <label for="nom">Entrez votre nom : </label>
-        <input type="text" name="name_prof" id="name_prof">
+        <label for="nom">nom et prenom : </label>
+        <input type="text" name="name_prof" id="name_prof"><br></br>
+        <label for="nom">les matieres : </label>
+        <input type="text" name="matiere" id="matiere"><br></br>
+        <label for="nom">grade du professeur : </label>
+        <input type="text" name="grade" id="grade"><br></br>
         <input type="submit" value="Envoyer !">
     </form>
 
