@@ -20,10 +20,20 @@ class UserTableSeeder extends Seeder
                      'password'          => '$2y$10$B7Gyt3w3LcYNG5IXRQWT4uXa7O3asOsckj5cuosOpI9seaiAmASuy', // password
                     
                      //'remember_token'    => Str::random(10),
-                 ],
+                 ]
                  
              ]
           );
+
+          DB::table('professeurs')->insert(
+            [
+                 [
+                     'name_prof'              => 'Marime Ndour'
+                 ]
+                 
+             ]
+          );
+
           
     }
 }
