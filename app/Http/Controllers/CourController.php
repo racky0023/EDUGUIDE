@@ -15,20 +15,11 @@ class CourController extends Controller
      
         return $file;
      }
-     
-
-   
-     
-
     public function index(){
         
         $cours = \App\Cour::orderBy('created_at','DESC')->get();
-        return view('cours.index', compact('cours'));
-        
-       
+        return view('cours.index', compact('cours')); 
     }
-
-    
       /**
 * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
 */
@@ -43,10 +34,7 @@ class CourController extends Controller
      $professeurs = \App\Professeur::pluck('name_prof','id');
   //  $cours->professeur_id = $request->input('professeur_id');
    return view('cours.create', compact('professeurs'));
-}
-
-        
-     
+}    
     public function store(Request $request){
         $cours = new \App\Cour();
         $cours->nom_cour = $request->input('nom_cour');

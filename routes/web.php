@@ -59,7 +59,7 @@ Route::get("cours/{id}/show", 'CourController@show');
   //return 'Votre email est ' . request('email');
 //});
 
-Auth::routes(['verify'=>true]);
+Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
