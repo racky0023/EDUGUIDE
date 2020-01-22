@@ -17,7 +17,7 @@ class UserTableSeeder extends Seeder
                      'name'              => 'admin',
                      'email'             => 'admin@email.com',
                      'email_verified_at' => now(),
-                     'password'          => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
+                     'password'          => '$2y$10$bgG9rG2HSTvK/qUWh70JeecLDFA.RgrRE9sW2NPZVfv7OKeT9/DLy', // password
                      'roles'             => 'admin',
                      'remember_token'    => Str::random(10),
                  ],
