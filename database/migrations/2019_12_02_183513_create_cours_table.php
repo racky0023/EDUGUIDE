@@ -17,7 +17,7 @@ class CreateCoursTable extends Migration
             $table->bigIncrements('id');
             $table->string('nom_cour');
             $table->unsignedInteger('professeur_id')->nullable();
-            $table->unsignedInteger('user_id')->nullable();
+           // $table->unsignedInteger('user_id')->nullable();
             $table->timestamps();
         });
     }
