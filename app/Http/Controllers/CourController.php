@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Str;
+use App\Professeur;
 
 class CourController extends Controller
 {
@@ -15,20 +16,11 @@ class CourController extends Controller
      
         return $file;
      }
-     
-
-   
-     
-
     public function index(){
         
         $cours = \App\Cour::orderBy('created_at','DESC')->get();
-        return view('cours.index', compact('cours'));
-        
-       
+        return view('cours.index', compact('cours')); 
     }
-
-    
       /**
 * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
 */
@@ -43,10 +35,7 @@ class CourController extends Controller
      $professeurs = \App\Professeur::pluck('name_prof','id');
   //  $cours->professeur_id = $request->input('professeur_id');
    return view('cours.create', compact('professeurs'));
-}
-
-        
-     
+}    
     public function store(Request $request){
         $cours = new \App\Cour();
         $cours->nom_cour = $request->input('nom_cour');
@@ -103,10 +92,14 @@ $cours = \App\Cour::find($id);
 $prof = \App\Professeur::pluck('name','id');
 return view('cours.edit', compact('cours','professeurs'));
 
-
+    
 
 }
 
+    public function liste_prof(){
+        $profs=Professeur::all();
+        return view('layouts.inscription',compact('profs'));
+    }
 
 public function update(Request $request, $id)
 {

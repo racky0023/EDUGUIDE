@@ -14,7 +14,7 @@ class AddImageToCours extends Migration
     public function up()
     {
         Schema::table('cours', function (Blueprint $table) {
-            $table->string('cour_image');
+           $table->string('cour_image');
         });
     }
 
@@ -27,7 +27,7 @@ class AddImageToCours extends Migration
     {
         Schema::table('cours', function (Blueprint $table) {
             
-                //$table->dropColumn('cour_image');
+                $table->dropColumn('cour_image');
            });
         
     }

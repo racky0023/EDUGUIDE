@@ -14,23 +14,43 @@ class UserTableSeeder extends Seeder
         DB::table('users')->insert(
             [
                  [
-                     'name'              => 'admin',
-                     'email'             => 'admin@email.com',
+                     'name'              => 'racky',
+                     'email'             => 'racky.wele@gmail.com',
                      'email_verified_at' => now(),
+<<<<<<< HEAD
                      'password'          => '$2y$10$bgG9rG2HSTvK/qUWh70JeecLDFA.RgrRE9sW2NPZVfv7OKeT9/DLy', // password
                      'roles'             => 'admin',
                      'remember_token'    => Str::random(10),
-                 ],
-                 [
-                     'name'              => 'user',
-                     'email'             => 'user@email.com',
-                     'email_verified_at' => now(),
-                     'password'          => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
-                     'roles'             => 'user',
-                     'remember_token'    => Str::random(10),
+=======
+                     'password'          => '$2y$10$B7Gyt3w3LcYNG5IXRQWT4uXa7O3asOsckj5cuosOpI9seaiAmASuy', // password
+                    
+                     //'remember_token'    => Str::random(10),
                  ]
+                 
              ]
           );
+
+          DB::table('professeurs')->insert(
+            [
+                 [
+                     'name_prof'              => 'Moustapha Ndour',
+                     'matiere'              => 'Réseau',
+                     'grade'              => 'Docteur'
+>>>>>>> 9573f0d1598d2a3fb571af869fd9ff63d2525e09
+                 ],
+                 [
+                    'name_prof'              => 'Moussa Mbaye',
+                     'matiere'              => 'Algorithme',
+                     'grade'              => 'Ingenieur'
+                 ],
+                 [
+                    'name_prof'              => 'Saliou Faye',
+                     'matiere'              => 'Java',
+                     'grade'              => 'Technicien'
+                ]
+             ]
+          );
+
           
     }
 }

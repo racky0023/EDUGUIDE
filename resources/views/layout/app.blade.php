@@ -39,9 +39,21 @@
           <li class="nav-item">
             <a class="nav-link" href="#">cour</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="professeurs">professeur</a>
-          </li>
+          <li class="nav-item dropdown">
+                                <a id="navbarDropdown2" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    professeur <span class="caret"></span>
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown2">
+                                    <a class="dropdown-item" href="professeurs">
+                                       liste professeur
+                                    </a>
+                                    <a class="dropdown-item" href="http://localhost:8000/contact/">
+                                       nouveau professeur
+                                    </a>
+                                </div>
+                            </li>
+          
          
          
           @guest
