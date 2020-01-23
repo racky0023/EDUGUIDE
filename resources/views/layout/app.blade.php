@@ -48,7 +48,7 @@
                                     <a class="dropdown-item" href="professeurs">
                                        liste professeur
                                     </a>
-                                    <a class="dropdown-item" href="http://localhost:8000/contact/">
+                                    <a class="dropdown-item" href="creation">
                                        nouveau professeur
                                     </a>
                                 </div>

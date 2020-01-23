@@ -32,7 +32,7 @@ class CourController extends Controller
          //$cours->cour_id = $request->input('cour_id');
      
        // return redirect('nom_cour');  
-     $professeurs = \App\Professeur::pluck('name_prof','id');
+     $professeurs = \App\Professeur::pluck('nom','prenom','id');
   //  $cours->professeur_id = $request->input('professeur_id');
    return view('cours.create', compact('professeurs'));
 }    
@@ -84,12 +84,12 @@ public function edit($id)
    
 {
    
-   $prof = \App\Professeur::pluck('name_prof','id');
+   $prof = \App\Professeur::pluck('nom','prenom','id');
    return view('cours.edit', compact('cour','professeurs'));
 }
 $this->authorize('admin');
 $cours = \App\Cour::find($id);
-$prof = \App\Professeur::pluck('name','id');
+$prof = \App\Professeur::pluck('nom','prenom','id');
 return view('cours.edit', compact('cours','professeurs'));
 
     
@@ -100,6 +100,7 @@ return view('cours.edit', compact('cours','professeurs'));
         $profs=Professeur::all();
         return view('layouts.inscription',compact('profs'));
     }
+  
 
 public function update(Request $request, $id)
 {

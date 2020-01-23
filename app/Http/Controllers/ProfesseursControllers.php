@@ -13,8 +13,11 @@ class ProfesseursControllers extends Controller
      */
     public function index()
     {
-        //
+          
+      $profs=Professeur::all();
+        return view('layout.creation',compact('profs'));
     }
+    
 
     /**
      * Show the form for creating a new resource.
