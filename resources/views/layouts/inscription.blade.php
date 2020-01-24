@@ -1,19 +1,47 @@
 @extends('layouts.infos')
 
 @section('contenu')
-<div class="card-deck">
-  @foreach($profs as $prof)
-    <div class="card">
-      <img src="images/images8.jpeg" class="card-img-top" alt="...">
-      <div class="card-body">
-          <span>Professeur de {{$prof->matiere}}</span>
-            <h3><a href="http://localhost:8000/uploads/images/_1577738502.pdf">{{$prof->grade}} {{$prof->name_prof}}</a></h3>
-          <h5 class="card-title">les Types de reseaux</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-      </div>
-    </div>
-  @endforeach
+<div class="container">
+  <div>
+    <table class="table table-dark">
+      <thead>
+        <tr>
+          <th>Nom</th>
+          <th>Prenom</th>
+          <th>Grade</th>
+          <th>Matiere</th>
+          <th>Sexe</th>
+          <th>Naissance</th>
+          <th>Telephone</th>
+          <th>Email</th>
+          <th>Editer</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+      @foreach($profs as $prof)
+        <tr>
+          <td>{{$prof->nom}}</td>
+          <td>{{$prof->prenom}}</td>
+          <td>{{$prof->grade}}</td>
+          <td>{{$prof->matiere}}</td>
+          <td>{{$prof->genre}}</td>
+          <td>{{$prof->naissance}}</td>
+          <td>{{$prof->telephone}}</td>
+          <td>{{$prof->email}}</td>
+          <td>
+            <a href="{{route('editer_prof',['id'=>$prof->id])}}" class="btn btn-primary">Edit</a>
+          </td>
+          <td>
+           <form action= "/professeurs/destroy/{{$prof->id}}" method="post">
+            <a href="" class="btn btn-danger">Delete</a>
+          </td>
+        </tr>
+      @endforeach
+      </tbody>
+    </table>
+  </div>
+  
       <!--div class="card">
           <img src="images/images10.jpeg" class="card-img-top" alt="...">
           <div class="card-body">

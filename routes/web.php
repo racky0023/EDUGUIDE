@@ -32,8 +32,11 @@ Route::get('cour_reseaux','CourController@index_welcome')->name('cours.index_wel
 Route::get('/abonnement/expired', "AbonnementController@expired");
 Route::get('/welcome', 'HomeController@index')->name('welcome');
 
-Route::get('/professeurs','ProfesseursControllers@index')->name('nouveau_prof');
-//Route::get('/creation','CourController@nouveau_prof')->name('nouveau_prof');
+//Route::delete('/professeurs/destroy/{id}','CourController@destroy')->name('professeurs_destroy');
+Route::get('creation/{id}/edit','CourController@edit')->name("editer_prof");
+Route::get('/creation','CourController@ajout_prof')->name('nouveau_prof');
+Route::post('/creation','CourController@nouveau_prof')->name('creation_prof');
+Route::get('/professeurs','CourController@liste_prof')->name('liste_prof');
 Route::get('/admin/dashboard', "CourController@index");
 //Route::get('/seller', "CourController@index");
 

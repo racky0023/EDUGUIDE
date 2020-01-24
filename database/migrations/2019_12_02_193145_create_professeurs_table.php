@@ -21,8 +21,8 @@ class CreateProfesseursTable extends Migration
             $table->string('grade');
             $table->string('email');
             $table->date('naissance');
-            $table->date('telephone');
-           
+            $table->string('telephone');
+            $table->string('genre');
             
             
             $table->timestamps();

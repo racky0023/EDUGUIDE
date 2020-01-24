@@ -79,31 +79,53 @@ public function backoffi(){
 
 public function edit($id)
 {
-   $cours = \App\Cour::find($id);//on recupere le cour
-   return view('cours.edit', compact('cours'));
-   
-{
-   
-   $prof = \App\Professeur::pluck('nom','prenom','id');
-   return view('cours.edit', compact('cour','professeurs'));
-}
+    {
+         $cours = \App\Cour::find($id);//on recupere le cour
+         return view('cours.edit', compact('cours'));
+    }
+     
+
+    {
+      $prof = \App\Professeur::pluck('nom','prenom','id');
+      return view('layouts.inscription', compact('professeurs'));
+    }
+
 $this->authorize('admin');
 $cours = \App\Cour::find($id);
 $prof = \App\Professeur::pluck('nom','prenom','id');
 return view('cours.edit', compact('cours','professeurs'));
 
-    
+}  
 
-}
+
 
     public function liste_prof(){
         $profs=Professeur::all();
         return view('layouts.inscription',compact('profs'));
     }
+    public function ajout_prof(){
+        return view('layout.creation');
+    }
+
+    public function nouveau_prof(Request $request){
+        $prof= new Professeur();
+        $prof->nom=$request->input('nom');
+        $prof->prenom=$request->input('prenom');
+        $prof->matiere=$request->input('matieres');
+        $prof->grade=$request->input('grade');
+        $prof->email=$request->input('email');
+        $prof->naissance=$request->input('naissance');
+        $prof->telephone=$request->input('phone');
+        $prof->genre=$request->input('genre');
+        $prof->save();
+        $profs=Professeur::all();
+        return redirect('/professeurs');
+    }
   
 
 public function update(Request $request, $id)
 {
+    
     $cours = \App\Cour::find($id);
     if($cours){
         $cours->nom_cour = $request->input('nom_cour');
@@ -119,7 +141,7 @@ public function update(Request $request, $id)
        ]);
    
    return redirect()->back();
-}
+ }
 $data = $request->validate([
     'nom_cour'   => 'required',
     //'price' => 'required | numeric',
@@ -148,6 +170,9 @@ $data = $request->validate([
  }
  return redirect()->back();
 }
+
+
+
 public function destroy($id)
 {
    $cours = \App\Cour::find($id);

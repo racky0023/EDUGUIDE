@@ -39,7 +39,7 @@
           <li class="nav-item">
             <a class="nav-link" href="cour_reseaux">cour</a>
           </li>
-          <li class="nav-item dropdown">
+                        <li class="nav-item dropdown">
                                 <a id="navbarDropdown2" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     professeur <span class="caret"></span>
                                 </a>
@@ -53,15 +53,15 @@
                                     </a>
                                 </div>
                             </li>
-         
-         
-          @guest
+          
+       
+                         @guest
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('connection') }}</a>
                             </li>
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    <a class="nav-link" href="{{ route('register') }}">{{ __('inscription') }}</a>
                                 </li>
                             @endif
                         @else
@@ -87,16 +87,69 @@
       </div>
     </div>
   </nav>
-  <main >
-    <div style="min-height:80vh;margin:0px;padding-top:20px;">
-        @yield('contenu')
-    </div>
-  </main>
+  
+
   <!-- Page Content -->
   <div class="container">
- 
 
+    <!-- Jumbotron Header -->
+    <header class="jumbotron my-4">
+      <h1 class="display-3">Formation e-learning : la technologie au service de votre formation </h1>
+      <p class="lead">Apprenez à apprendre.
+Découvrez les compétences de demain.
+Et prenez votre carrière en main</p>
+      <a href="cour_developp" class="btn btn-primary btn-lg">EN SAVOIR PLUS</a>
+    </header>
 
+    <!-- Page Features -->
+    <div class="row text-center">
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="images/images2.jpeg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Reseaux</h4>
+            <p class="card-text">En informatique, un réseau désigne une série de machines ou noeuds interconnectés par des chemins de communication. Les réseaux peuvent eux-mêmes s'interconnecter à d'autres réseaux et contenir des sous-réseaux.</p>
+          </div>
+         
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="images/index1.jpg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Developpement webs</h4>
+            <p class="card-text">Apparu avec Internet, le développement web fait référence au processus d’écriture d’un site ou d’une page web dans un langage technique. Il s’agit d’une étape incontournable pour qu’un contenu soit mis en ligne et atteigne ses lecteurs.</p>
+          </div>
+         
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="images/images1.jpg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Maintenance informatique</h4>
+            <p class="card-text">Le technicien de maintenance informatique assure l’entretien et la réparation des matériels informatiques. Il peut réaliser également l’installation de nouveaux équipements ou assurer la formation des utilisateurs. .</p>
+          </div>
+         
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="images/images.png" alt="">
+          <div class="card-body">
+            <h4 class="card-title">Anglais</h4>
+            <p class="card-text">Apprendre l'anglais. La meilleure façon d'apprendre l'anglais. Apprendre en ligne, simple et efficace</p>
+          </div>
+          
+        </div>
+      </div>
+
+    </div>
+    <!-- /.row -->
 
   </div>
   <!-- /.container -->
