@@ -12,8 +12,12 @@
    </tr>
 @endforeach
 
+
 </table>
+<video src="SCRUM.mp4" controls poster="SCRUM.jpg" width="600"></video>
 
+ 
 
+ 
 </div>
 @endsection

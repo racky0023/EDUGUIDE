@@ -21,6 +21,17 @@ class UserTableSeeder extends Seeder
                      'roles'             => 'admin',
                      'remember_token'    => Str::random(10),
                  ],
+                 [
+                    'name'              => 'Elmounir',
+                    'email'             => 'mounir@gmail.com',
+                    'email_verified_at' => now(),
+                    'password'          => '$2y$10$bgG9rG2HSTvK/qUWh70JeecLDFA.RgrRE9sW2NPZVfv7OKeT9/DLy', // password
+                    'roles'             => 'eleve',
+                    'remember_token'    => Str::random(10),
+                ]
+            ]
+         );
+         
                 // [
                   //  'name_prof'              => 'Moussa Mbaye',
                     // 'matiere'              => 'Algorithme',
@@ -31,8 +42,8 @@ class UserTableSeeder extends Seeder
                      //'matiere'              => 'Java',
                      //'grade'              => 'Technicien'
                 //]
-             ]
-          );
+             
+          
 
           
     }

@@ -176,12 +176,19 @@ $data = $request->validate([
 public function destroy($id)
 {
    $cours = \App\Cour::find($id);
-   
-   $cours->delete();
-
-   return back()->withInfo('un cour est suprime');
-
+    $cours->delete();
+    return back()->withInfo('un cour est suprime');
+    
+    {
+       $prof = Professeur::find($id);
+       if($prof)
+           $prof->delete();
+       return redirect()->route('professeurs');
+    }
+    
 }
+
+
 public function index_welcome(){
     $cours = \App\Cour::orderBy('created_at','DESC')->get();
     return view('layout.welcome', compact('cours'));
