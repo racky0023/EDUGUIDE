@@ -10,8 +10,8 @@ class LoginController extends Controller
     public function redirectTo(){
         if(auth()->user()->isAdmin()){
             return '/admin/dashboard';
-        } elseif(auth()->user()->isSeller()){
-            return '/seller';
+        } elseif(auth()->user()->isEleve()){
+            return '/eleve';
         } else {
             return '/';
         }

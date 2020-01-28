@@ -21,10 +21,14 @@ class AppServiceProvider extends ServiceProvider
    Gate::define('admin',function(User $user){
        return $user->isAdmin();
    });
-   Gate::define('moderator', function(User $user){
-       return $user->isModerator();
+   Gate::define('eleve', function(User $user){
+       return $user->isEleve();
    });
+   Gate::define('professeur', function(User $user){
+    return $user->isProfesseur();
+});
 }
+
 
     }
 

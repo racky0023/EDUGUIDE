@@ -22,15 +22,10 @@ class User extends Authenticatable implements MustVerifyEmail
         $cours->user_id  = Auth::id();
         $cours->save();
     }
-    public function register()
-{
-   Gate::define('admin',function(User $user){
-       return $user->isAdmin();
-   });
-   Gate::define('moderator', function(User $user){
-       return $user->isModerator();
-   });
-}
+    public function Professeur(){
+        return $this->belongsTo('App\Professeur');
+    }
+
 
 
     /**
@@ -63,8 +58,11 @@ class User extends Authenticatable implements MustVerifyEmail
     public function isAdmin(){
         return strtolower(@$this->roles) === 'admin'? true : false;
      }
-     public function isModerator(){
-        return strtolower(@$this->roles) === 'moderator'? true : false;
+     public function isEleve(){
+        return strtolower(@$this->roles) === 'eleve'? true : false;
+     }
+     public function isProfesseur(){
+        return strtolower(@$this->roles) === 'professeur'? true : false;
      }
            
 }

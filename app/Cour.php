@@ -14,8 +14,8 @@ class Cour extends Model
     }
 
     
-        public function User(){
-            return $this->belongsToMany("App\User");
+        public function Notification(){
+            return $this->belongsToMany("App\Notification");
         }
 
 
