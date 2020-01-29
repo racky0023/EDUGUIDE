@@ -28,7 +28,17 @@ class UserTableSeeder extends Seeder
                     'password'          => '$2y$10$bgG9rG2HSTvK/qUWh70JeecLDFA.RgrRE9sW2NPZVfv7OKeT9/DLy', // password
                     'roles'             => 'eleve',
                     'remember_token'    => Str::random(10),
+                 ],
+                
+                [
+                    'name'              => 'Diop',
+                    'email'             => 'diopbamba@gmail.com',
+                    'email_verified_at' => now(),
+                    'password'          => '$2y$10$bgG9rG2HSTvK/qUWh70JeecLDFA.RgrRE9sW2NPZVfv7OKeT9/DLy', // password
+                    'roles'             => 'professeur',
+                    'remember_token'    => Str::random(10),
                 ]
+                
             ]
          );
          

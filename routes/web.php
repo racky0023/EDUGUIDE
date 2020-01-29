@@ -44,7 +44,7 @@ Route::get('/professeurs','CourController@liste_prof')->name('liste_prof');
 
 Route::get('/admin/dashboard', "CourController@index");
 Route::get('/eleve', "CourController@index_welcome");
-Route::get('/professeur', "CourController@index");
+Route::get('/professeur', "CourController@liste_prof");
 
 Route::get("/","HomeController@index");
 Route::get("/", function () {
@@ -62,7 +62,9 @@ Route::get("/contact", function () {
 Route::get("/creation", function () {
   return view('layout.creation');
 });
-
+Route::get("/resume", function () {
+  return view('layout.donnees');
+});
 
 
 Route::get("cours/{id}/show", 'CourController@show');

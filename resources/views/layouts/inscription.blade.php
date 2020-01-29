@@ -32,6 +32,10 @@
           <td>
             <a href="{{route('editer_prof',['id'=>$prof->id])}}" class="btn btn-primary">Edit</a>
           </td>
+
+          <td>
+            <a href="/resume" class="btn btn-primary">Cour</a>
+          </td>
           <td>
           @method('delete')
            <form action= "/professeurs/destroy/{{$prof->id}}" method="post">
