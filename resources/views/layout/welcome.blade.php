@@ -1,7 +1,7 @@
 @extends("layout.app")
 @section("container")
 <div class="container">
-<p> </p>
+<h2 class="title">LES DIFFERENTS COURS</h2>
 <table>
 @foreach($cours as $cour)
    <tr>
@@ -14,7 +14,8 @@
 
 
 </table>
-<video src="SCRUM.mp4" controls poster="SCRUM.jpg" width="600"></video>
+<video src="preview-38379.mp4" controls poster="preview-38379.jpg" width="600"></video><br></br>
+<video src="CourssurlesRseauxInformatiques.mp4" controls poster="CourssurlesRseauxInformatiques.jpg" width="600"></video>
 
  
 
