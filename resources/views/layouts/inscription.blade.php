@@ -29,12 +29,11 @@
           <td>{{$prof->naissance}}</td>
           <td>{{$prof->telephone}}</td>
           <td>{{$prof->email}}</td>
-          <td>
-            <a href="{{route('editer_prof',['id'=>$prof->id])}}" class="btn btn-primary">Edit</a>
-          </td>
+          
 
           <td>
             <a href="/resume" class="btn btn-primary">Cour</a>
+            
           </td>
           <td>
           @method('delete')

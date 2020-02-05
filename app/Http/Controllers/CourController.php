@@ -21,6 +21,12 @@ class CourController extends Controller
         $cours = \App\Cour::orderBy('created_at','DESC')->get();
         return view('cours.index', compact('cours')); 
     }
+
+    public function cour_prof(){
+        
+        $cours = \App\Cour::orderBy('created_at','DESC')->get();
+        return view('layout.donnees', compact('cours')); 
+    }
       /**
 * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
 */

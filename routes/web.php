@@ -40,6 +40,7 @@ Route::get('creation/{id}/edit','CourController@edit')->name("editer_prof");
 Route::get('/creation','CourController@ajout_prof')->name('nouveau_prof');
 Route::post('/creation','CourController@nouveau_prof')->name('creation_prof');
 Route::get('/professeurs','CourController@liste_prof')->name('liste_prof');
+Route::get('/resume','CourController@cour_prof')->name('cour_prof');
 
 
 Route::get('/admin/dashboard', "CourController@index");
