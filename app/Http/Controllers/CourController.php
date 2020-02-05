@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Str;
 use App\Professeur;
+use App\Cour;
 
 class CourController extends Controller
 {
@@ -22,9 +23,10 @@ class CourController extends Controller
         return view('cours.index', compact('cours')); 
     }
 
-    public function cour_prof(){
+    public function cour_prof($id){
         
-        $cours = \App\Cour::orderBy('created_at','DESC')->get();
+        $cours = \App\Cour::where('professeur_id',$id)->get();
+        //dd($cours);
         return view('layout.donnees', compact('cours')); 
     }
       /**

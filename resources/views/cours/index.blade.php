@@ -1,3 +1,6 @@
+@extends('layouts.infos')
+@section('contenu')
+
 <!DOCTYPE html>
 <html lang="fr">
 <head >
@@ -75,3 +78,4 @@
     <!-- Main JS-->
     <script src="js/global.js"></script>
 </html>
+@endsection

@@ -3,6 +3,7 @@
 @section('contenu')
 <div class="container">
   <div>
+  
     <table class="table table-dark">
       <thead>
         <tr>
@@ -32,7 +33,7 @@
           
 
           <td>
-            <a href="/resume" class="btn btn-primary">Cour</a>
+            <a href="{{route('cour_prof',['id'=>$prof->id])}}" class="btn btn-primary">Cour</a>
             
           </td>
           <td>
