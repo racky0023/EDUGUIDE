@@ -43,6 +43,8 @@ Route::get('/professeurs','CourController@liste_prof')->name('liste_prof');
 Route::get('/resume/{id}','CourController@cour_prof')->name('cour_prof');
 Route::post('/resume','CourController@store')->name('save_cour');
 
+
+
 Route::get('/admin/dashboard', "CourController@index");
 Route::get('/eleve', "CourController@index_welcome");
 Route::get('/professeur', "CourController@liste_prof");

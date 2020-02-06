@@ -18,7 +18,6 @@
 			@foreach($cours as $cour)
 				<tr>
 				<td>{{$cour->nom_cour}}</td>
-				<td>{{$cour->professeur_id}}</td>
 				<td>{{$cour->cour_image}}</td>
 				<td>
 						
@@ -68,6 +67,7 @@
       <div class="modal-footer">
         <button type="button" class="btn btn-danger" data-dismiss="modal">Annuler</button>
         <input type="submit" class="btn btn-success" value="Enregistrer">
+		<!--<button class="btn btn-success">Enregistrer</button>-->
       </div>
     </div>
   </div>
