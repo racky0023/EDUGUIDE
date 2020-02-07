@@ -62,11 +62,12 @@
 				<label for="">Cour</label>
 				<input type="file" class="form-control" name="cour_image">
 			</div>
+			<button type="button" class="btn btn-danger" data-dismiss="modal">Annuler</button>
+        	<input type="submit" class="btn btn-success" value="Enregistrer">
 		</form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Annuler</button>
-        <input type="submit" class="btn btn-success" value="Enregistrer">
+        
 		<!--<button class="btn btn-success">Enregistrer</button>-->
       </div>
     </div>
