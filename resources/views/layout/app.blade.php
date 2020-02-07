@@ -47,7 +47,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">cour</a>
+            <a class="nav-link" href="cour_reseaux">cour</a>
           </li>
           <li class="nav-item dropdown">
                                 <a id="navbarDropdown2" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
