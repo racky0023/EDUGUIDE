@@ -68,6 +68,9 @@ Route::get("/creation", function () {
 Route::get("/resume", function () {
   return view('layout.donnees');
 });
+Route::get("/tableau", function () {
+  return view('front.posts');
+});
 
 
 Route::get("cours/{id}/show", 'CourController@show');
