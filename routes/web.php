@@ -68,9 +68,15 @@ Route::get("/creation", function () {
 Route::get("/resume", function () {
   return view('layout.donnees');
 });
+
+//creation dun tableau de bord
 Route::get("/tableau", function () {
-  return view('front.posts');
+  return view('front.layout');
 });
+Route::get("/bord", function () {
+  return view('back.layout');
+});
+
 
 
 Route::get("cours/{id}/show", 'CourController@show');

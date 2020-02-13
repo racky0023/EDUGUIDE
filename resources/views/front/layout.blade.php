@@ -23,6 +23,7 @@
 </head>
 
 <body id="page-top">
+@yield('css')
 
   <!-- Page Wrapper -->
   <div id="wrapper">
@@ -556,6 +557,7 @@
 
       </div>
       <!-- End of Main Content -->
+      @yield('main')
 
       <!-- Footer -->
       <footer class="sticky-footer bg-white">
@@ -597,6 +599,8 @@
     </div>
   </div>
 
+  @yield('scripts')
+
   <!-- Bootstrap core JavaScript-->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -622,22 +626,4 @@
 
 
 
-  </div>
-  <!-- /.container -->
-
-  <!-- Footer -->
-  <footer class="py-5 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
-    </div>
-    <!-- /.container -->
-  </footer>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="{{asset('js/app.js')}}"></script>
-
-</body>
-
-</html>
+ 
