@@ -56,9 +56,24 @@
       <div class="sidebar-heading">
         Interface
       </div>
+      <li class="nav-item dropdown">
+                                <a id="navbarDropdown2" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    professeur <span class="caret"></span>
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown2">
+                                    <a class="dropdown-item" href="professeurs">
+                                       liste professeur
+                                    </a>
+                                    <a class="dropdown-item" href="creation">
+                                       nouveau professeur
+                                    </a>
+                                </div>
+                            </li>
+          
 
       <!-- Nav Item - Pages Collapse Menu -->
-      <li class="nav-item">
+      <li class="snav-item dropdown">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
           <i class="fas fa-fw fa-cog"></i>
           <span>Utilisateurs</span>
