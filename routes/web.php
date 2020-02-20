@@ -76,6 +76,9 @@ Route::get("/tableau", function () {
 Route::get("/bord", function () {
   return view('back.layout');
 });
+//Route::get("/bord", function () {
+  //return view('users.index');
+//});
 
 
 

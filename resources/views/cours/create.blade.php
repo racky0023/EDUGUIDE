@@ -1,4 +1,5 @@
-
+@extends('layouts.infos')
+@section('contenu')
 <form action="{{route('store_cours')}}" method="post" enctype="multipart/form-data">
 
 <div>
@@ -23,3 +24,4 @@
         <button class="btn btn-primary">Enregistrer</button>
         </div>
         </form>
+        @endsection
